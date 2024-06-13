@@ -1,0 +1,17 @@
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+fast_reauth=1
+
+network={
+    ssid="Roshan_5GHz"
+    proto=RSN
+    key_mgmt=FT-EAP
+    pairwise=CCMP
+    group=CCMP
+    eap=PEAP
+    identity="ROSHAN"
+    password="1308rosh"
+    phase1="fast_provisioning=2"
+    phase2="auth=MSCHAPV2"
+    priority=1
+}
